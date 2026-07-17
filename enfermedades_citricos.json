@@ -1,0 +1,255 @@
+{
+    "Agujeros de bala": {
+        "tipo": "Enfermedad.",
+        "descripcion": "Los agujeros de bala son una enfermedad caracterizada por la aparición de pequeñas manchas oscuras en las hojas que posteriormente se secan y desprenden, dejando perforaciones circulares. En cítricos suele estar asociada a infecciones por hongos o bacterias y puede agravarse en ambientes con alta humedad.",
+        "causa": "Hongos o bacterias oportunistas favorecidos por humedad elevada.",
+        "transmision": "Las esporas o bacterias se dispersan por lluvia, viento, herramientas contaminadas y salpicaduras de agua durante el riego.",
+        "sintomas": [
+            "Pequeñas manchas marrones.",
+            "Perforaciones circulares en las hojas.",
+            "Caída prematura del follaje.",
+            "Reducción de la fotosíntesis."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Podar ramas para mejorar la ventilación.",
+                "Evitar el exceso de humedad en el follaje.",
+                "Desinfectar herramientas con alcohol al 70% antes y después de la poda.",
+                "Retirar hojas caídas y enfermas."
+            ],
+            "tratamiento": [
+                "Aplicar caldo bordelés siguiendo las dosis recomendadas para agricultura orgánica.",
+                "Aplicar extracto de cola de caballo cada 7 a 10 días.",
+                "Eliminar hojas severamente afectadas."
+            ],
+            "costo": "Bajo."
+        }
+    },
+    "Cancro de los cítricos": {
+        "tipo": "Enfermedad bacteriana.",
+        "descripcion": "El cancro de los cítricos es una enfermedad causada por una bacteria que produce lesiones elevadas de color café con un halo amarillo en hojas, ramas y frutos. Disminuye la calidad de la fruta y provoca defoliación.",
+        "causa": "Xanthomonas citri.",
+        "transmision": "Se propaga mediante lluvia, viento, herramientas contaminadas, material vegetal infectado y heridas ocasionadas por insectos o granizo.",
+        "sintomas": [
+            "Lesiones circulares con borde amarillo",
+            "Caída de hojas.",
+            "Frutos deformados.",
+            "Secado de ramas jóvenes."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Utilizar plantas certificadas libres de enfermedad.",
+                "Podar ramas infectadas.",
+                "Desinfectar herramientas.",
+                "Evitar riego por aspersión."
+            ],
+            "tratamiento": [
+                "Aplicar caldo bordelés o preparados a base de cobre permitidos en producción orgánica.",
+                "Eliminar y destruir material infectado.",
+                "Mantener buena ventilación del árbol."
+            ],
+            "costo": "Bajo."
+        }
+    },
+    "Cochinilla algodonosa": {
+        "tipo": "Plaga.",
+        "descripcion": "La cochinilla algodonosa es un insecto chupador que se alimenta de la savia de hojas, ramas y frutos. Produce una sustancia azucarada llamada melaza que favorece el desarrollo de fumagina.",
+        "causa": "Insectos de la familia Pseudococcidae.",
+        "transmision": "Se dispersa por el viento, hormigas, herramientas, plantas infestadas y movimiento de material vegetal.",
+        "sintomas": [
+            "Masas blancas semejantes al algodón.",
+            "Hojas pegajosas.",
+            "Presencia de fumagina negra.",
+            "Debilitamiento del árbol."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Controlar las hormigas.",
+                "Podar ramas infestadas.",
+                "Favorecer insectos benéficos como catarinas."
+            ],
+            "tratamiento": [
+                "Aplicar jabón potásico.",
+                "Aplicar aceite de neem.",
+                "Retirar manualmente colonias pequeñas con un algodón húmedo."
+            ],
+            "costo": "Muy bajo."
+        }
+    },
+    "Daño de follaje": {
+        "tipo": "Síntoma.",
+        "descripcion": "El daño de follaje corresponde a lesiones ocasionadas por factores como insectos, viento, granizo, deficiencias nutricionales o enfermedades. No representa una enfermedad específica.",
+        "causa": "Factores bióticos y abióticos.",
+        "transmision": "No aplica.",
+        "sintomas": [
+            "Hojas rotas.",
+            "Mordidas.",
+            "Necrosis.",
+            "Quemaduras.",
+            "Enrollamiento."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Monitorear frecuentemente el cultivo.",
+                "Mantener una nutrición equilibrada.",
+                "Realizar podas sanitarias."
+            ],
+            "tratamiento": [
+                "Identificar la causa antes de aplicar cualquier tratamiento.",
+                "Eliminar hojas severamente dañadas.",
+                "Aplicar composta para fortalecer el árbol."
+            ],
+            "costo": "Muy bajo."
+        }
+    },
+    "Hoja sana": {
+        "tipo": "Condición saludable.",
+        "descripcion": "Una hoja sana presenta color verde uniforme, buen desarrollo y ausencia de manchas, perforaciones, deformaciones o presencia de insectos.",
+        "causa": "Estado fisiológico normal.",
+        "transmision": "No aplica.",
+        "sintomas": [
+            "Color verde uniforme",
+            "Sin manchas.",
+            "Sin plagas.",
+            "Buena turgencia."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Aplicar composta o lombricomposta.",
+                "Mantener riego adecuado.",
+                "Realizar monitoreo constante.",
+                "Favorecer biodiversidad."
+            ],
+            "tratamiento": [
+                "No requiere tratamiento."
+            ],
+            "costo": "Ninguno."
+        }
+    },
+    "Hojas amarillas": {
+        "tipo": "Síntoma",
+        "descripcion": "El amarillamiento de las hojas puede ser consecuencia de deficiencias nutricionales, exceso de agua, estrés hídrico, enfermedades o plagas. Es importante identificar la causa antes de intervenir.",
+        "causa": "Deficiencias nutricionales, enfermedades, plagas o estrés ambiental.",
+        "transmision": "Depende de la causa que origine el síntoma.",
+        "sintomas": [
+            "Color amarillo parcial o total.",
+            "Disminución del crecimiento.",
+            "Caída de hojas."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Aplicar composta madura.",
+                "Usar lixiviado de lombriz.",
+                "Mantener buen drenaje."
+            ],
+            "tratamiento": [
+                "Aplicar biofertilizantes.",
+                "Corregir problemas de riego.",
+                "Realizar análisis visual periódico."
+            ],
+            "costo": "Muy bajo."
+        }
+    },
+    "Huanglongbing": {
+        "tipo": "Enfermedad bacteriana.",
+        "descripcion": "El Huanglongbing (HLB) es la enfermedad más destructiva de los cítricos. Produce amarillamiento irregular, frutos deformes, reducción de producción y finalmente la muerte del árbol.",
+        "causa": "Candidatus Liberibacter asiaticus.",
+        "transmision": "Principalmente por el psílido asiático de los cítricos (Diaphorina citri) y por injertos de plantas infectadas.",
+        "sintomas": [
+            "Amarillamiento irregular",
+            "Frutos pequeños.",
+            "Semillas abortadas.",
+            "Disminución del rendimiento."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Utilizar plantas certificadas.",
+                "Eliminar árboles gravemente infectados.",
+                "Controlar el psílido mediante monitoreo.",
+                "Instalar trampas amarillas."
+            ],
+            "tratamiento": [
+                "No existe cura para el HLB.",
+                "Aplicar aceite de neem para reducir la población del vector.",
+                "Conservar enemigos naturales del psílido.",
+                "Fortalecer el árbol mediante composta y biofertilizantes."
+            ],
+            "costo": "Bajo."
+        }
+    },
+    "Mosca blanca espinosa de los cítricos": {
+        "tipo": "Plaga.",
+        "descripcion": "La mosca blanca espinosa es un insecto chupador que reduce el vigor del árbol y favorece la aparición de fumagina debido a la producción de melaza.",
+        "causa": "Aleurocanthus spiniferus.",
+        "transmision": "Los adultos vuelan entre plantas y también pueden transportarse en material vegetal infestado.",
+        "sintomas": [
+            "Presencia de insectos negros en el envés de las hojas.",
+            "Melaza.",
+            "Fumagina.",
+            "Amarillamiento."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Monitorear constantemente.",
+                "Eliminar hojas muy infestadas.",
+                "Instalar trampas cromáticas amarillas."
+            ],
+            "tratamiento": [
+                "Aplicar jabón potásico.",
+                "Aplicar aceite de neem.",
+                "Favorecer enemigos naturales como catarinas y crisopas."
+            ],
+            "costo": "Muy bajo"
+        }
+    },
+    "Muerte regresiva": {
+        "tipo": "Enfermedad.",
+        "descripcion": "La muerte regresiva provoca el secado progresivo de ramas desde la punta hacia el tronco. Puede estar relacionada con diversos hongos y con condiciones de estrés del cultivo.",
+        "causa": "Hongos oportunistas y estrés fisiológico.",
+        "transmision": "Esporas transportadas por viento, lluvia y herramientas contaminadas.",
+        "sintomas": [
+            "Secado de ramas.",
+            "Pérdida de hojas.",
+            "Disminución del vigor.",
+            "Muerte progresiva."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Evitar heridas durante la poda.",
+                "Mejorar el drenaje.",
+                "Aplicar composta."
+            ],
+            "tratamiento": [
+                "Podar ramas secas.",
+                "Desinfectar herramientas.",
+                "Aplicar Trichoderma alrededor de la base del árbol como agente de control biológico."
+            ],
+            "costo": "Bajo."
+        }
+    },
+    "Oídio de los cítricos": {
+        "tipo": "Enfermedad fúngica.",
+        "descripcion": "El oídio produce un crecimiento blanquecino semejante a polvo sobre hojas y brotes jóvenes. Reduce el crecimiento y puede deformar el follaje.",
+        "causa": "Hongos del grupo de los oídios.",
+        "transmision": "Las esporas son transportadas por el viento y se desarrollan bajo condiciones de humedad moderada y poca ventilación.",
+        "sintomas": [
+            "Polvo blanco sobre hojas.",
+            "Enrollamiento.",
+            "Deformación.",
+            "Reducción del crecimiento."
+        ],
+        "manejo_organico": {
+            "prevencion": [
+                "Podar para mejorar la circulación de aire.",
+                "Evitar exceso de nitrógeno.",
+                "Retirar hojas infectadas."
+            ],
+            "tratamiento": [
+                "Aplicar bicarbonato de sodio (5 g por litro de agua) con unas gotas de jabón potásico como adherente.",
+                "Aplicar extracto de cola de caballo.",
+                "Aplicar azufre agrícola permitido en producción orgánica cuando las temperaturas no sean elevadas."
+            ],
+            "costo": "Muy bajo."
+        }
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diagnóstico Inteligente de Cítricos</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🍊 Diagnóstico Inteligente de Enfermedades en Cítricos</h1>
+    <p>Sube una fotografía de una hoja para obtener un diagnóstico mediante Inteligencia Artificial.</p>
+
+</header>
+
+<main>
+
+    <section class="card">
+
+        <input type="file"
+               id="imagen"
+               accept="image/*">
+
+        <br><br>
+
+        <button id="btnAnalizar">
+            Analizar Imagen
+        </button>
+
+    </section>
+
+    <section class="preview">
+
+        <img
+            id="preview"
+            src="{{ url_for('static', filename='img/default.jpeg') }}"
+            alt="Vista previa">
+
+    </section>
+
+    <section id="resultado" class="resultado">
+
+    </section>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
