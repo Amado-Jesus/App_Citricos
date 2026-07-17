@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 
 import json
-from scipy import io
 from torchvision import transforms
 import torch.nn as nn
 from torchvision import models
