@@ -10,7 +10,7 @@ import torch
 
 
 
-flask_app = Flask(__name__)
+app = Flask(__name__)
 
 
 with open("enfermedades_citricos.json", "r", encoding="utf-8") as archivo:
@@ -91,13 +91,13 @@ idx = {0: 'Agujeros de bala',
  9: 'Oídio de los cítricos'}
 
 
-@flask_app.route("/")
+@app.route("/")
 def Home():
     return render_template("index.html")
 
 
 
-@flask_app.route("/predict", methods = ["POST"])
+@app.route("/predict", methods = ["POST"])
 def predict():
 
     if 'imagen' not in request.files:
@@ -146,6 +146,6 @@ def predict():
 
 
 if __name__ == "__main__":
-    flask_app.run(debug=True, host="0.0.0.0", port=8080)
+    app.run(debug=True, host="0.0.0.0", port=8080)
     
     
