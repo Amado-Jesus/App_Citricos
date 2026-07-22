@@ -69,7 +69,7 @@ class MobileNetV3Small(nn.Module):
 def load_model():
 
     checkpoint = torch.load('modelo_mobilenet.pth',map_location = "cpu")
-    model = MobileNetV3Small(10)
+    model = MobileNetV3Small(4)
 
     model.load_state_dict(checkpoint['model_state_dict'])
 
@@ -79,16 +79,9 @@ def load_model():
 
 model = load_model()
 
-idx = {0: 'Agujeros de bala',
- 1: 'Cancro de los cítricos',
- 2: 'Cochinilla algodonosa',
- 3: 'Daño de follaje',
- 4: 'Hoja sana',
- 5: 'Hojas amarillas',
- 6: 'Huanglongbing',
- 7: 'Mosca blanca espinosa de los cítricos',
- 8: 'Muerte regresiva',
- 9: 'Oídio de los cítricos'}
+
+
+idx = {0:'Cancro de los cítricos',1:'Hoja sana',2:'Huanglongbing',3:'Minador de hojas de citricos'}
 
 
 @app.route("/")
