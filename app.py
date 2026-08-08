@@ -121,6 +121,7 @@ def predict():
 
         return  jsonify({
         "prediccion": pred_clase,
+        "probabilidad": float(probs[pred_idx]),
         "tipo": info["tipo"],
         "descripcion": info["descripcion"],
         "causa": info["causa"],
