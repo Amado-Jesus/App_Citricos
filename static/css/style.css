@@ -1,102 +1,698 @@
-*{
+* {
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 
-}
-
-body{
-
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+    box-sizing: border-box;
 
 }
 
-header{
 
-    background:#2E7D32;
-    color:white;
-    padding:25px;
-    text-align:center;
+body {
 
-}
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
-main{
+    background: #f4f7f4;
 
-    width:90%;
-    max-width:1100px;
-    margin:30px auto;
+    color: #263238;
 
-}
-
-.card{
-
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-    text-align:center;
+    min-height: 100vh;
 
 }
 
-button{
 
-    padding:12px 25px;
-    border:none;
-    background:#43A047;
-    color:white;
-    cursor:pointer;
-    font-size:17px;
-    border-radius:8px;
+/* =========================
+   HEADER
+========================= */
 
-}
+.header {
 
-button:hover{
+    background:
+        linear-gradient(
+            135deg,
+            #1b5e20,
+            #2e7d32
+        );
 
-    background:#1B5E20;
+    color: white;
 
-}
+    padding: 25px 20px;
 
-#preview{
-
-    width:350px;
-    max-height:350px;
-    object-fit:cover;
-    border-radius:10px;
-    border:2px dashed #ccc;
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.15);
 
 }
 
-.preview img{
 
-    width:350px;
-    border-radius:10px;
-    display:block;
-    margin:auto;
+.header-content {
 
-}
+    max-width: 1100px;
 
-.resultado{
+    margin: auto;
 
-    margin-top:30px;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
 
 }
 
-.resultado h2{
 
-    color:#1B5E20;
-    margin-bottom:15px;
+.logo {
+
+    font-size: 50px;
 
 }
 
-.resultado p{
 
-    margin-bottom:12px;
-    line-height:1.6;
+.header h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.header p {
+
+    opacity: 0.9;
+
+    font-size: 15px;
+
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.container {
+
+    width: 92%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+}
+
+
+/* =========================
+   TARJETA DE CARGA
+========================= */
+
+.upload-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+}
+
+
+.section-title h2 {
+
+    color: #1b5e20;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.section-title p {
+
+    color: #607d8b;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   AREA DE CARGA
+========================= */
+
+.upload-area {
+
+    border: 2px dashed #81c784;
+
+    background: #f8fff8;
+
+    border-radius: 15px;
+
+    padding: 40px 20px;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.upload-area:hover {
+
+    border-color: #2e7d32;
+
+    background: #f1f8f1;
+
+}
+
+
+.upload-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.upload-area h3 {
+
+    color: #2e7d32;
+
+    margin-bottom: 8px;
+
+}
+
+
+.upload-area p {
+
+    color: #78909c;
+
+    margin-bottom: 18px;
+
+}
+
+
+.select-button {
+
+    display: inline-block;
+
+    background: #2e7d32;
+
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
+
+
+/* Ocultamos el input real */
+
+#imagen {
+
+    display: none;
+
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview-container {
+
+    display: none;
+
+    margin-top: 30px;
+
+}
+
+
+.preview-container h3 {
+
+    color: #2e7d32;
+
+    margin-bottom: 15px;
+
+}
+
+
+#preview {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    max-height: 400px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    border: 1px solid #ddd;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.12);
+
+}
+
+
+#fileName {
+
+    margin-top: 10px;
+
+    color: #607d8b;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   BOTÓN ANALIZAR
+========================= */
+
+.analyze-button {
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.analyze-button:hover:not(:disabled) {
+
+    background: #1b5e20;
+
+    transform: translateY(-1px);
+
+}
+
+
+.analyze-button:disabled {
+
+    background: #bdbdbd;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+
+    display: none;
+
+    margin-top: 25px;
+
+}
+
+
+.spinner {
+
+    width: 40px;
+
+    height: 40px;
+
+    margin: auto;
+
+    border: 4px solid #e0e0e0;
+
+    border-top: 4px solid #2e7d32;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.loading p {
+
+    margin-top: 12px;
+
+    font-weight: bold;
+
+    color: #2e7d32;
+
+}
+
+
+.loading span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #78909c;
+
+}
+
+
+/* =========================
+   RESULTADOS
+========================= */
+
+.results {
+
+    margin-top: 30px;
+
+}
+
+
+.result-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.result-header {
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.result-header .icon {
+
+    font-size: 45px;
+
+}
+
+
+.result-header h2 {
+
+    color: #1b5e20;
+
+    margin-top: 8px;
+
+}
+
+
+.probability {
+
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 8px 15px;
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+
+}
+
+
+.info-box {
+
+    background: #f8faf8;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+}
+
+
+.info-box h3 {
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+
+}
+
+
+.info-box p {
+
+    line-height: 1.6;
+
+    color: #455a64;
+
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+.info-box ul {
+
+    padding-left: 20px;
+
+}
+
+
+.info-box li {
+
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+
+    color: #455a64;
+
+}
+
+
+/* =========================
+   CULTIVO
+========================= */
+
+.crop-badge {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    background: #fff3e0;
+
+    color: #e65100;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   NUEVO ANÁLISIS
+========================= */
+
+.new-analysis {
+
+    margin-top: 25px;
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #2e7d32;
+
+    background: white;
+
+    color: #2e7d32;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+}
+
+
+.new-analysis:hover {
+
+    background: #2e7d32;
+
+    color: white;
+
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-card {
+
+    background: #ffebee;
+
+    border-left: 5px solid #c62828;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    color: #b71c1c;
+
+}
+
+
+.error-card h3 {
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #78909c;
+
+    font-size: 13px;
+
+}
+
+
+.footer p {
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .header-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .upload-card {
+
+        padding: 22px;
+
+    }
+
+
+    .info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .container {
+
+        width: 94%;
+
+    }
 
 }
