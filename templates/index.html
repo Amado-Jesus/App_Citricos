@@ -4,55 +4,222 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diagnóstico Inteligente de Cítricos</title>
+    <title>
+        Diagnóstico Inteligente de Enfermedades en Cítricos
+    </title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
 
 </head>
 
 <body>
 
-<header>
+    <!-- ==========================================
+         ENCABEZADO
+    =========================================== -->
 
-    <h1>🍊 Diagnóstico Inteligente de Enfermedades en Cítricos</h1>
-    <p>Sube una fotografía de una hoja para obtener un diagnóstico mediante Inteligencia Artificial.</p>
+    <header class="header">
 
-</header>
+        <div class="header-content">
 
-<main>
+            <div class="logo">
+                🍊 
+            </div>
 
-    <section class="card">
+            <div>
 
-        <input type="file"
-               id="imagen"
-               accept="image/*">
+                <h1>
+                    Diagnóstico Inteligente de Enfermedades en Cítricos
+                </h1>
 
-        <br><br>
+                <p>
+                    Sube una fotografía de una hoja para obtener un diagnóstico mediante Inteligencia Artificial.
+                </p>
 
-        <button id="btnAnalizar">
-            Analizar Imagen
-        </button>
+            </div>
 
-    </section>
+        </div>
 
-    <section class="preview">
+    </header>
 
-        <img
-            id="preview"
-            src="{{ url_for('static', filename='img/default.jpeg') }}"
-            alt="Vista previa">
 
-    </section>
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+    =========================================== -->
 
-    <section id="resultado" class="resultado">
+    <main class="container">
 
-    </section>
 
-</main>
+        <!-- ======================================
+             CARGA DE IMAGEN
+        ======================================= -->
 
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <section class="upload-card">
+
+            <div class="section-title">
+
+                <h2>
+                    Analizar
+                </h2>
+
+                <p>
+                    Selecciona una fotografía de una hoja
+                    para obtener un diagnóstico mediante
+                    Inteligencia Artificial.
+                </p>
+
+            </div>
+
+
+            <!-- ÁREA PARA SELECCIONAR IMAGEN -->
+
+            <label
+                for="imagen"
+                class="upload-area"
+                id="uploadArea"
+            >
+
+                <div class="upload-icon">
+                    📷
+                </div>
+
+                <h3>
+                    Selecciona una imagen
+                </h3>
+
+                <p>
+                    Formatos permitidos: JPG, JPEG o PNG
+                </p>
+
+                <span class="select-button">
+                    Seleccionar imagen
+                </span>
+
+            </label>
+
+
+            <!-- INPUT REAL -->
+
+            <input
+                type="file"
+                id="imagen"
+                name="imagen"
+                accept="image/png,image/jpeg,image/jpg"
+            >
+
+
+            <!-- ==================================
+                 VISTA PREVIA
+            =================================== -->
+
+            <div
+                class="preview-container"
+                id="previewContainer"
+            >
+
+                <h3>
+                    Imagen seleccionada
+                </h3>
+
+                <img
+                    id="preview"
+                    alt="Imagen seleccionada"
+                >
+
+                <p id="fileName"></p>
+
+            </div>
+
+
+            <!-- ==================================
+                 BOTÓN ANALIZAR
+            =================================== -->
+
+            <button
+                id="btnAnalizar"
+                class="analyze-button"
+                disabled
+            >
+
+                🔍 Analizar imagen
+
+            </button>
+
+
+            <!-- ==================================
+                 INDICADOR DE CARGA
+            =================================== -->
+
+            <div
+                id="loading"
+                class="loading"
+            >
+
+                <div class="spinner"></div>
+
+                <p>
+                    Analizando imagen...
+                </p>
+
+                <span>
+                    La inteligencia artificial está
+                    procesando la imagen.
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ======================================
+             RESULTADOS DEL DIAGNÓSTICO
+        ======================================= -->
+
+        <section
+            id="resultado"
+            class="results"
+        >
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ==========================================
+         PIE DE PÁGINA
+    =========================================== -->
+
+    <footer class="footer">
+
+        <p>
+            Sistema de apoyo para el diagnóstico
+            de enfermedades en cultivos cítricos.
+        </p>
+
+        
+        <p>
+            El resultado proporcionado por el modelo
+            no sustituye la evaluación de un especialista.
+        </p>
+
+    </footer>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script
+        src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
 
 </body>
 
