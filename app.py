@@ -42,7 +42,7 @@ class MobileNetV3Small(nn.Module):
         # Congelar features
         if freeze_features:
             for param in self.backbone.features.parameters():
-                param.requires_grad = True
+                param.requires_grad = False
         
         # Reemplazar clasificador completo
         # V3 Small tiene: Linear -> Hardswish -> Dropout -> Linear
@@ -60,10 +60,7 @@ class MobileNetV3Small(nn.Module):
     def forward(self, x):
         return self.backbone(x)
     
-    def unfreeze_features(self):
-        """Descongela todas las capas para entrenamiento completo."""
-        for param in self.backbone.features.parameters():
-            param.requires_grad = True
+
 
 
 def load_model():
@@ -81,7 +78,10 @@ model = load_model()
 
 
 
-idx = {0:'Cancro de los cítricos',1:'Hoja sana',2:'Huanglongbing',3:'Minador de hojas de citricos'}
+idx = {0:'Cancro de los cítricos',
+       1:'Hoja sana',
+       2:'Huanglongbing',
+       3:'Minador de hojas de citricos'}
 
 
 @app.route("/")
